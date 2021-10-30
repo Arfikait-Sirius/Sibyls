@@ -8,6 +8,6 @@ type emily struct{}
 
 var Emily emily
 
-func (e emily) FnPrintLine(message string) {
-	fmt.Println(message)
+func ( e emily ) FnPrintLine( message string ) () {
+	fmt.Println( message )
 }
