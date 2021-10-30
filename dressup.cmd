@@ -10,6 +10,7 @@ IF NOT exist %DIR_SIBYLS% (
 
 copy .\dir_Girls\Emily\emily.go %DIR_GIRLS%\. > NUL
 copy .\dir_Girls\Louise\louise.go %DIR_GIRLS%\. > NUL
+copy .\dir_Girls\Tina\tina.go %DIR_GIRLS%\. > NUL
 
 set DIR_HOME=%cd%
 cd %1
