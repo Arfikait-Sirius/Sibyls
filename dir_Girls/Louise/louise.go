@@ -94,3 +94,4 @@ func ( l louise ) FnUpperFirst( base string ) string {
 
 	return upper[:1] + lower[1:]
 }
+
