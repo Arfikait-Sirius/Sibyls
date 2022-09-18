@@ -13,21 +13,16 @@ var LABEL_TARGET string = "[    TARGET]: "
 var LABEL_JUDGE string = "[     JUDGE]: "
 var LABEL_PRINT string = "[     PRINT]: "
 
-var girlName string
-var skillName string
-
 func ( t tina ) FnSetGirlName( name string ) () {
-	girlName = name
 
-	fmt.Printf( "%s%s\n", LABEL_GIRLS_NAME, girlName )
+	fmt.Printf( "%s%s\n", LABEL_GIRLS_NAME, name )
 
 	return
 }
 
 func ( t tina ) FnSetSkillName( target string ) () {
-	skillName = target
 
-	fmt.Printf( "%s%s()\n", LABEL_TARGET, skillName )
+	fmt.Printf( "%s%s()\n", LABEL_TARGET, target )
 
 	return
 }
@@ -37,7 +32,7 @@ func ( t tina ) FnJudge( judgement bool ) () {
 	if judgement {
 		fmt.Printf( "%sOK\n", LABEL_JUDGE )
 	}else{
-		fmt.Printf( "%sNG - Please check %s\n", LABEL_JUDGE, skillName )
+		fmt.Printf( "%sNG - Please check this source.\n", LABEL_JUDGE )
 	}
 
 	return
